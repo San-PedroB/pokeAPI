@@ -1,0 +1,20 @@
+<button id="fire-button">🔥 Fuego</button>
+<button id="water-button">💧 Agua</button>
+<button id="view-all-button">🌍 Ver todos</button>
+
+<script>
+const mapping = {
+  "fire-button": "fire",
+  "water-button": "water",
+  "view-all-button": null
+};
+
+function filterByType(type) {
+  console.log("Filtrando por tipo:", type);
+}
+
+Object.entries(mapping).forEach(([id, type]) => {
+  const btn = document.getElementById(id);
+  btn.addEventListener("click", () => filterByType(type));
+});
+</script>
