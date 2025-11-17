@@ -1,0 +1,1 @@
+export const DEFAULT_POKEMON_LIMIT = 256;
