@@ -1,0 +1,83 @@
+/* ===== OVERLAY ===== */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* ===== MODAL ===== */
+.modal-card {
+    position: relative;
+    padding: 2.5rem;                 /* más padding alrededor */
+    width: 95%;
+    max-width: 780px;                /* AUMENTAMOS ancho del modal */
+    max-height: 90vh;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Botón de cerrar */
+.modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    border: none;
+    background: transparent;
+    font-size: 2.2rem;
+    cursor: pointer;
+}
+
+/* ===== CARD DENTRO DEL MODAL (versión XL) ===== */
+
+/* Más ancho total */
+.modal-card .pokemon {
+    width: 100%;
+    max-width: 620px;               /* Card más ancha */
+    margin: 0 auto;
+}
+
+/* Agrandamos todo el contenido */
+.modal-card .pokemon-target {
+    transform: scale(1.18);         /* escala general de la card */
+    cursor: default;
+    padding-block: 2rem;            /* más altura interna */
+}
+
+/* Congelamos el hover */
+.modal-card .pokemon-target:hover {
+    transform: scale(1.18);
+    box-shadow: 0 0 4rem -1rem rgba(0, 0, 0, 0.25);
+}
+
+/* Imagen más grande */
+.modal-card .pokemon-image img {
+    max-width: 12rem;               /* antes 6rem → modal original 10rem */
+}
+
+/* ID de fondo gigante */
+.modal-card .pokemon-id-back {
+    font-size: 10rem;               /* antes 6rem */
+}
+
+/* Nombre más grande */
+.modal-card .pokemon-name {
+    font-size: 1.8rem;
+}
+
+/* Stats más grandes */
+.modal-card .stat {
+    font-size: 1rem;
+    padding: 0.3rem 0.8rem;
+}
+
+/* Tipos más grandes */
+.modal-card .pokemon-type-badge {
+    font-size: 1rem;
+    padding: 0.35rem 0.8rem;
+}
