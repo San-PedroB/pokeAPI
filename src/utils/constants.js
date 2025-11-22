@@ -1,1 +1,1 @@
-export const DEFAULT_POKEMON_LIMIT = 256;
+export const DEFAULT_POKEMON_LIMIT = 151;

@@ -9,10 +9,20 @@ export function usePokemonData(limit = DEFAULT_POKEMON_LIMIT) {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    let isMounted = true;
     async function load() {
+      setLoading(true);
+      const startTime = Date.now();
       try {
-        const results = await fetchAllPokemon(limit);
-        setPokemon(results);
+        const data = await fetchAllPokemon(limit);
+        const elapsed = Date.now() - startTime;
+        const minLoadingTime = 2000;
+        if (elapsed < minLoadingTime) {
+          await new Promise((resolve) => setTimeout(resolve, minLoadingTime - elapsed));
+        }
+        if (isMounted) {
+          setPokemon(data);
+        }
       } catch (e) {
         setError(e);
       } finally {
@@ -21,6 +31,7 @@ export function usePokemonData(limit = DEFAULT_POKEMON_LIMIT) {
     }
 
     load();
+    return () => { isMounted = false; };
   }, [limit]);
 
   return { pokemon, loading, error };

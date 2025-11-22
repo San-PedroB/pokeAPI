@@ -1,0 +1,27 @@
+/* ===== TRANSICIÓN GENERAL ===== */
+body {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* ===== TEMA CLARO ===== */
+.light {
+  --bg-color: #f4f4f4;
+  --text-color: #111111;
+  --card-bg-color: #ffffff;
+  --card-border-color: #dddddd;
+}
+
+/* ===== TEMA OSCURO ===== */
+.dark {
+  --bg-color: #111827;      /* fondo general */
+  --text-color: #f9fafb;    /* texto principal */
+  --card-bg-color: #1f2933; /* fondo de cards/modales */
+  --card-border-color: #374151;
+}
+
+/* ===== APLICACIÓN GLOBAL ===== */
+body.light,
+body.dark {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}

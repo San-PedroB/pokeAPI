@@ -35,6 +35,7 @@ export default function PokemonCard({ data, onSelect, isSelectable = true }) {
           <img src={img || ""} alt={data.name} className="pokemon-img" />
         </div>
 
+
         <div className="pokemon-info">
           <div className="pokemon-identity">
             <p className="pokemon-id">#{id}</p>

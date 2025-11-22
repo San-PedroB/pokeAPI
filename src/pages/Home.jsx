@@ -3,11 +3,13 @@ import { useMemo, useState } from "react";
 import { usePokemonData } from "../hooks/usePokemonData";
 import TypeFilter from "../components/TypeFilter";
 import PokemonList from "../components/PokemonList";
-import Loading from "../components/Loading";
+import Loading from "../components/LoadingSpinner";
 import ErrorMessage from "../components/ErrorMessage";
 import PokemonModal from "../components/PokemonModal";
 import { DEFAULT_POKEMON_LIMIT } from "../utils/constants";
 import { filterByType } from "../utils/filters";
+import Navbar from "../components/NavBar";
+
 
 export default function Home() {
   const { pokemon, loading, error } = usePokemonData(DEFAULT_POKEMON_LIMIT);
@@ -32,6 +34,10 @@ export default function Home() {
 
   return (
     <>
+      {/* Navbar con switch de tema */}
+      <Navbar/>
+
+    
       <header>
         <TypeFilter
           selectedType={selectedType}
