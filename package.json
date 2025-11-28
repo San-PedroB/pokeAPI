@@ -10,8 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@madzadev/audio-player": "^2.1.14",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-h5-audio-player": "^3.10.1",
     "react-switch": "^7.1.0"
   },
   "devDependencies": {

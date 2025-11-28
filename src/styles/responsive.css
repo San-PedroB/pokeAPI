@@ -1,0 +1,133 @@
+/* ===== VARIABLES RESPONSIVAS GLOBALES ===== */
+
+:root {
+    /* Espaciados usados */
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+
+    /* Tamaños de fuente usados */
+    --font-size-base: 1rem;
+    --font-size-lg: 1.1rem;
+    --font-size-huge: 13rem;
+
+    /* Modal */
+    --modal-padding-block: 2rem;
+    --modal-padding-inline: 1.5rem;
+    --modal-border-radius: 1.5rem;
+    --modal-button-size: 50px;
+    --modal-button-font: 3rem;
+    --modal-button-offset: 1rem;
+    --modal-close-size: 2.2rem;
+    --modal-close-top: 1rem;
+    --modal-close-right: 1.5rem;
+    --modal-max-height: 85vh;
+
+    /* DetailCard */
+    --detail-card-img-size: 15rem;
+    --detail-card-id-bg-size: 13rem;
+    --detail-card-gap: 0.4rem;
+    --detail-card-padding-block: 1rem;
+    --detail-card-padding-inline: 1rem;
+    --detail-card-name-size: 2.5rem;
+    --detail-card-description-padding: 1.5rem;
+    --detail-card-type-badge-padding-block: 0.5rem;
+    --detail-card-type-badge-padding-inline: 1.2rem;
+    --detail-card-stat-padding-block: 0.5rem;
+    --detail-card-stat-padding-inline: 1rem;
+    --detail-card-toggle-width: 64px;
+    --detail-card-toggle-height: 32px;
+    --detail-card-toggle-thumb: 26px;
+    --detail-card-toggle-thumb-right: 35px;
+
+    /* MusicPlayer */
+    --music-player-width: 150px;
+    --music-player-title-size: 0.75rem;
+    --music-player-gap: 0.1rem;
+    --music-player-button-scale: 0.9;
+}
+
+/* ===== TABLETS (≤768px) ===== */
+@media (max-width: 768px) {
+    :root {
+        --font-size-huge: 10rem;
+
+        --modal-padding-block: 1.5rem;
+        --modal-padding-inline: 1rem;
+        --modal-button-size: 45px;
+        --modal-button-font: 2.8rem;
+        --modal-close-size: 1.8rem;
+        --modal-close-top: 0.5rem;
+        --modal-max-height: 95vh;
+
+        --detail-card-img-size: 12rem;
+        --detail-card-id-bg-size: 10rem;
+        --detail-card-description-padding: 1.2rem;
+    }
+}
+
+/* ===== MÓVILES (≤600px) ===== */
+@media (max-width: 600px) {
+    :root {
+        --spacing-sm: 0.3rem;
+        --spacing-md: 0.75rem;
+
+        --font-size-base: 0.95rem;
+        --font-size-lg: 1rem;
+        --font-size-huge: 8rem;
+
+        --modal-padding-block: 1rem;
+        --modal-padding-inline: 0.75rem;
+        --modal-border-radius: 1rem;
+        --modal-button-size: 35px;
+        --modal-button-font: 2rem;
+        --modal-button-offset: 0.25rem;
+        --modal-close-size: 1.5rem;
+        --modal-close-top: 0.25rem;
+        --modal-close-right: 0.75rem;
+        --modal-max-height: 90vh;
+
+        --detail-card-img-size: 10rem;
+        --detail-card-id-bg-size: 8rem;
+        --detail-card-gap: 0.3rem;
+        --detail-card-padding-block: 0.75rem;
+        --detail-card-padding-inline: 0.75rem;
+        --detail-card-name-size: 1.75rem;
+        --detail-card-description-padding: 1rem;
+        --detail-card-type-badge-padding-block: 0.4rem;
+        --detail-card-type-badge-padding-inline: 1rem;
+        --detail-card-stat-padding-block: 0.4rem;
+        --detail-card-stat-padding-inline: 0.8rem;
+        --detail-card-toggle-width: 56px;
+        --detail-card-toggle-height: 28px;
+        --detail-card-toggle-thumb: 22px;
+        --detail-card-toggle-thumb-right: 30px;
+
+        --music-player-width: 120px;
+        --music-player-gap: 0.1rem;
+        --music-player-button-scale: 0.8;
+    }
+}
+
+/* ===== MÓVILES PEQUEÑOS (≤400px) ===== */
+@media (max-width: 400px) {
+    :root {
+        --spacing-md: 0.5rem;
+
+        --font-size-huge: 6rem;
+
+        --modal-padding-block: 0.75rem;
+        --modal-padding-inline: 0.5rem;
+        --modal-button-size: 30px;
+        --modal-button-font: 1.8rem;
+        --modal-button-offset: 0.1rem;
+
+        --detail-card-img-size: 8rem;
+        --detail-card-id-bg-size: 6rem;
+        --detail-card-padding-inline: 0.5rem;
+        --detail-card-name-size: 1.5rem;
+        --detail-card-description-padding: 0.75rem;
+
+        --music-player-width: 100px;
+        --music-player-button-scale: 0.7;
+    }
+}

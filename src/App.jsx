@@ -1,6 +1,12 @@
-import "./styles/main.css";
-import Home from "./pages/Home";
+
+import Home from "./pages/Home/Home";
+import Navbar from "./components/Navbar/Navbar";
 
 export default function App() {
-  return <Home />;
+  return (
+    <>
+      <Navbar />
+      <Home />
+    </>
+  );
 }

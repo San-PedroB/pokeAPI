@@ -1,22 +1,21 @@
-/* ===== TRANSICIÓN GENERAL ===== */
 body {
   transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 /* ===== TEMA CLARO ===== */
 .light {
-  --bg-color: #f4f4f4;
-  --text-color: #111111;
-  --card-bg-color: #ffffff;
-  --card-border-color: #dddddd;
+  --bg-color: #e5e7eb;
+  --text-color: #1f2937;
+  --card-bg-color: #f3f4f6;
+  --card-border-color: #d1d5db;
 }
 
 /* ===== TEMA OSCURO ===== */
 .dark {
-  --bg-color: #111827;      /* fondo general */
-  --text-color: #f9fafb;    /* texto principal */
-  --card-bg-color: #1f2933; /* fondo de cards/modales */
-  --card-border-color: #374151;
+  --bg-color: #0f1419;
+  --text-color: #c9d1d9;
+  --card-bg-color: #1c2128;
+  --card-border-color: #30363d;
 }
 
 /* ===== APLICACIÓN GLOBAL ===== */
